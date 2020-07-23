@@ -1,0 +1,18 @@
+@import 'libs/variables';
+@import 'libs/jquery.pagepiling';
+@import 'libs/fonts';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Norms', Helvetica, sans-serif;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+@import 'header';
+@import 'about';
+@import 'projects';
+@import 'contacts';

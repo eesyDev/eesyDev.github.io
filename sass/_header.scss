@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    padding: 30px 0 0 310px;
+    height: 60px;
+    z-index: 10;
+    margin: 0 auto;
+    #navigation {
+        display: flex;
+        align-items: center;
+    }
+    &_logo {
+        margin-right: 170px;
+    }
+    &_logoHigh {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        span {
+            color: $red_color;
+        }
+    }
+    &_logoBottom {
+        color: $red_color;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &_nav {
+        left: 640px;
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_links {
+        font-size: 15px;
+        color: $grey_color;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.4s ease;
+        &:hover {
+            color: $red_color;
+        }
+    }
+    .active {
+        color: $red_color;
+    }
+}
