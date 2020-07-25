@@ -34,6 +34,6 @@ let text = baffle('.textEffect');
 text.reveal([1000], [2000]),
 text.start (3000),
 text.set ({
-    characters: 'fuck',
+    characters: '¿⊥∠√∧@$&†¤¢∂≡£∨¬α∧',
     speed: 120
 });

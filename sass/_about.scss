@@ -4,7 +4,7 @@
     }
     ul {
         li {
-            margin: 30px 0 30px 60px;
+            margin: 4vw 0 4vw 5vw;
             span {
                 background: #303030;
             }
@@ -60,13 +60,12 @@
         text-transform: uppercase;
         letter-spacing: 0.1em;
         color: rgba($red_color, .5);
-        transform: rotate(90deg);
     }
     &_text {
         position: absolute;
         font-weight: 200;
-        top: 200px;
-        left: 52%;
+        top: 35%;
+        left: 50%;
         transform: translateX(-50%);
         width: 800px;
         max-height: 100%;
@@ -78,8 +77,8 @@
     &_down {
         position: absolute;
         z-index: 3;
-        top: 35em;
-        left: 4em;
+        top: 85vh;
+        left: 5.1vw;
         color: $red_color;
     }
     &_next {
@@ -145,6 +144,9 @@
         color: #232323;
     }
     20% {
+        color: #232323;
+    }
+    40% {
         color: $grey_color;
     }
     100% {
@@ -165,5 +167,99 @@
     }
     100% {
         top: 45px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about {
+        &_text {
+            width: 630px;
+            font-size: 18px;
+        }
+        &_number {
+            font-size: 300px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .about {
+        &_text {
+            width: 500px;
+            font-size: 17px;
+        }
+        &_number {
+            font-size: 245px;
+            top: 25%;
+            left: -40px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .about {
+        &_text {
+            width: 420px;
+            font-size: 16px;
+        }
+        &_number {
+            font-size: 215px;
+        }
+        &_next {
+            display: block;
+            position: absolute;
+            left: -3vw;
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 599px) {
+    .about {
+        &_text {
+            width: 280px;
+            font-size: 15px;
+            line-height: 1.2;
+            top: 25%;
+        }
+        &_number {
+            top: 20%;
+            font-size: 140px;
+            left: -20px;
+        }
+        &_next {
+            left: -4vw;
+            font-size: 13px;
+        }
+        &_down {
+            left: 6vw;
+        }
+        &_arrow, &_arrow2 {
+            width: 15px;
+        }
+    }
+}
+@media (max-width: 424px) {
+    .about {
+        &_text {
+            width: 250px;
+            font-size: 14px;
+            line-height: 1.25;
+            top: 20%;
+        }
+        &_number {
+            left: -25px;
+            top: 15%;
+        }
+        &_next {
+            left: -5vw;
+        }
+    }
+}
+@media (max-width: 374px) {
+    .about {
+        &_text {
+            width: 210px;
+            font-size: 13px;
+            line-height: 1.2;
+            top: 15%;
+        }
     }
 }
