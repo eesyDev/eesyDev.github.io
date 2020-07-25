@@ -1,6 +1,7 @@
 @import 'libs/variables';
 @import 'libs/jquery.pagepiling';
 @import 'libs/fonts';
+@import 'libs/icons';
 
 html, body {
     margin: 0;
@@ -15,4 +16,3 @@ h1 {
 @import 'header';
 @import 'about';
 @import 'projects';
-@import 'contacts';
