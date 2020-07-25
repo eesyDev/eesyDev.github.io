@@ -23,17 +23,16 @@
         width: 100%;
         height: 100%;
         position: relative;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url(../img/code.jpeg) center center/cover no-repeat;
-            opacity: 0.5;
-            animation: animate 40s ease infinite alternate;
-        }
+    }
+    &_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 110%;
+        height: 100%;
+        background: url(../img/code.jpeg) center center/cover no-repeat;
+        opacity: 0.5;
+        animation: animate 40s ease infinite alternate;
     }
     &_cover {
         background: linear-gradient(to top, rgba(#000, 1) 0%, rgba(#000, .97) 10%, rgba(#000, .7) 100%);
@@ -114,7 +113,7 @@
         background-position: 0 0;
     }
     30% {
-        background-position: 12px 0;
+        background-position: 22px 0;
     }
     35% {
         background-position: 0 0;
@@ -123,16 +122,16 @@
         background-position: -16px 0;
     }
     50% {
-        background-position: 24px 12px;
+        background-position: 12px 2px;
     }
     60% {
-        background-position: -52px 0;
+        background-position: -32px 0;
     }
     70% {
-        background-position: 0 22px;
+        background-position: 0 0;
     }
     80% {
-        background-position: -40px -10px;
+        background-position: -40px -2px;
     }
     100% {
         background-position: 0 0;
@@ -146,7 +145,7 @@
     20% {
         color: #232323;
     }
-    40% {
+    30% {
         color: $grey_color;
     }
     100% {
@@ -203,11 +202,16 @@
         &_number {
             font-size: 215px;
         }
+        &_down {
+            transform: rotate(180deg);
+            left: 11.5vw;
+        }
         &_next {
             display: block;
             position: absolute;
-            left: -3vw;
+            left: 4vw;
             font-size: 14px;
+            translate: rotate(180deg);
         }
     }
 }
@@ -224,12 +228,12 @@
             font-size: 140px;
             left: -20px;
         }
-        &_next {
-            left: -4vw;
-            font-size: 13px;
-        }
         &_down {
-            left: 6vw;
+            left: 14vw;
+        }
+        &_next {
+            left: 4vw;
+            font-size: 13px;
         }
         &_arrow, &_arrow2 {
             width: 15px;
@@ -240,7 +244,7 @@
     .about {
         &_text {
             width: 250px;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 1.25;
             top: 20%;
         }
@@ -248,8 +252,11 @@
             left: -25px;
             top: 15%;
         }
+        &_down {
+            left: 16vw;
+        }
         &_next {
-            left: -5vw;
+            left: 5vw;
         }
     }
 }
@@ -257,7 +264,7 @@
     .about {
         &_text {
             width: 210px;
-            font-size: 13px;
+            font-size: 12.3px;
             line-height: 1.2;
             top: 15%;
         }
