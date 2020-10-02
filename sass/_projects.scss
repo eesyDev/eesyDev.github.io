@@ -1,5 +1,8 @@
 .projects {
     background: linear-gradient(to bottom, #000 0%, #111 50%, #000 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     &_number {
         font-size: 300px;
         position: absolute;
@@ -12,7 +15,7 @@
         color: rgba($red_color, .1);
     }
     &_wrapper {
-        margin: 15vh auto 0;
+        margin: 25vh auto 0;
         width: 1008px;
         height: 400px;
         display: grid;
@@ -26,6 +29,10 @@
         text-align: center;
         padding: 15px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s  !important;
         a {
             display: block;
             width: 100%;
@@ -77,34 +84,83 @@
             grid-column-start: 15;
             grid-column-end: 19;
         }
+        &_7 {
+            grid-row-start: 1;
+            grid-row-end: 8;
+            grid-column-start: 1;
+            grid-column-end: 9;
+        }
+        &_8 {
+            grid-row-start: 1;
+            grid-row-end: 7;
+            grid-column-start: 9;
+            grid-column-end: 19;
+        }
+        &_9 {
+            grid-row-start: 8;
+            grid-row-end: 14;
+            grid-column-start: 1;
+            grid-column-end: 10;
+        }
+        &_10 {
+            grid-row-start: 7;
+            grid-row-end: 14;
+            grid-column-start: 10;
+            grid-column-end: 19;
+        }
+        &_11 {
+            grid-row-start: 14;
+            grid-row-end: 17;
+            grid-column-start: 1;
+            grid-column-end: 19;
+        }
         &:hover {
-            background-color: rgba(#000, .8);
+            background-color: rgba(#212121, .8);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+            transition: 0.8s all !important;
+            .projects_descr {
+                display: block;
+                transition: 0.8s all !important;
+            }
         }
     }
     &_name {
         font-size: 19px;
         margin-bottom: 15px;
         &_1 {
-            color: #11749e;
+            color: #2471A3;
         }
         &_2 {
             color: #fff;
         }
         &_3 {
-            color: #f74c55;
+            color: #f2c014;
         }
         &_4 {
-            color: #5b4295;
+            color: #5d6e64;
         }
         &_5 {
-            color: #ec644b;
+            color: #ff395d;
         }
         &_6 {
+            color: #c6da20;
+        }
+        &_7 {
             color: #c78030;
         }
-    }
-    &_descr {
-        font-size: 16px;
+        &_8 {
+            color: #fff0e3;
+        }
+        &_9 {
+            color: #4AF8DD;
+        }
+        &_10 {
+            color: #bd99b4;
+        }
+        &_11 {
+            color: #fd2915;
+            margin-bottom: 0;
+        }
     }
 }
 

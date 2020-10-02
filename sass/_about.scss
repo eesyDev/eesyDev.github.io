@@ -16,6 +16,8 @@
 }
 .about {
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
     section {
         background: url(../img/code.jpeg) center center/cover no-repeat;
         width: 100%;
@@ -61,36 +63,39 @@
     &_text {
         position: absolute;
         font-weight: 200;
-        top: 35%;
+        top: 26%;
         left: 50%;
         transform: translateX(-50%);
         width: 800px;
         max-height: 100%;
-        color: #323232;
-        font-size: 20px;
+        color: #929292;
+        font-size: 1.05em;
         z-index: 3;
-        animation: text 10s ease-in infinite alternate;
+        // animation: text 10s ease-in infinite alternate;
     }
     &_down {
         position: absolute;
         z-index: 3;
-        top: 85vh;
+        top: 80vh;
         left: 5.1vw;
         color: $red_color;
+        width: 1px;
+        height: 75px;
+        background: #212121;
     }
     &_next {
         display: none;
         transform: rotate(90deg);
     }
-    &_arrow, &_arrow2 {
-        width: 20px;
+    &_arrow {
+        width: 5px;
+        height: 25px;
+        background: #555555;
+        border-radius: 25px;
         position: absolute;
-        left: 10px;
-        top: -25px;
-        animation: arrow1 2s normal 0.5s infinite;
-    }
-    &_arrow2 {
-        animation: arrow2 2s normal 0.5s infinite;
+        left: -2px;
+        top: 25px;
+        animation: arrow1 5s normal 2s infinite;
     }
 }
 @keyframes animate {
@@ -152,18 +157,13 @@
 }
 @keyframes arrow1 {
     0% {
-        top: -35px;
+        top: 0;
+    }
+    50% {
+        top: 50px;
     }
     100% {
-        top: 30px;
-    }
-}
-@keyframes arrow2 {
-    0% {
-        top: -30px;
-    }
-    100% {
-        top: 45px;
+        top: 0;
     }
 }
 
@@ -216,10 +216,10 @@
 @media (max-width: 599px) {
     .about {
         &_text {
-            width: 280px;
+            width: 315px;
             font-size: 15px;
             line-height: 1.2;
-            top: 25%;
+            top: 15%;
         }
         &_number {
             top: 20%;
@@ -227,15 +227,8 @@
             left: -20px;
         }
         &_down {
-            left: 14vw;
+            left: 6.5vw;
             top: 80vh;
-        }
-        &_next {
-            left: 4vw;
-            font-size: 13px;
-        }
-        &_arrow, &_arrow2 {
-            width: 15px;
         }
     }
 }
@@ -251,12 +244,6 @@
             left: -25px;
             top: 15%;
         }
-        &_down {
-            left: 16vw;
-        }
-        &_next {
-            left: 5vw;
-        }
     }
 }
 @media (max-width: 374px) {
@@ -265,7 +252,7 @@
             width: 210px;
             font-size: 12.3px;
             line-height: 1.2;
-            top: 15%;
+            top: 13%;
         }
     }
 }

@@ -1,5 +1,4 @@
 @import 'libs/variables';
-@import 'libs/jquery.pagepiling';
 @import 'libs/fonts';
 @import 'libs/icons';
 
@@ -12,6 +11,27 @@ html, body {
 h1 {
     margin: 0;
     padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+.swiper-scrollbar {
+    background: #212121 !important;
+    &-drag {
+        background: #424242 !important; 
+    }
+}
+.swiper-pagination-bullet {
+    width: 40px !important;
+    height: 3px !important;
+    background: #555555 !important;
+    border-radius: 2px !important;
+    opacity: none;
+    &-active {
+        background: #f74c55 !important;
+    }
 }
 @import 'header';
 @import 'about';
