@@ -36,7 +36,7 @@ new TypeIt(".text", {
     speed: 50
 })
 .type('<label style="margin-bottom: 15px">Hi!</label>')
-.type(`<label style="margin-bottom: 15px; padding-left:10px">My name is Daniel and I'm practicing alcoholic</label>`, {delay: 1500})
+.type(`<label style="margin-bottom: 15px; padding-left:10px">I am practicing alcoholic</label>`, {delay: 1500})
 .delete(9, {speed: 150})
 .type('developer')
 .break({delay: 200})
